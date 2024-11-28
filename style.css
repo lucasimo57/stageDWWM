@@ -1,0 +1,451 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lora', serif;
+    line-height: 1.6;
+}
+
+.banner {
+    width: 100%;
+    height: 100vh;
+    background-image: url(./image/accueil_1.jpg);
+    background-position: center;
+    background-size: cover;
+    color: white;
+}
+
+.navbar {
+    width: 90%;
+    padding: 30px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    margin-left: 180%;
+    width: 250px;
+    height: auto;
+}
+
+.nav-links {
+    display: flex;
+    margin-right: 500px;
+    gap: 2rem;
+    list-style: none;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Lora', serif;
+    transition: opacity 0.3s ease;
+}
+
+.nav-links a:hover {
+    opacity: 0.8;
+}
+
+.hero-content {
+    text-align: center;
+    padding: 0 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    max-width: 1200px;
+}
+
+.hero-content h1 {
+    font-family: 'Lato', sans-serif;
+    font-size: 61px;
+    margin-bottom: 2rem;
+}
+
+.hero-description {
+    font-size: 20px;
+    margin-bottom: 3rem;
+    line-height: 1.8;
+}
+
+.cta-button {
+    display: inline-block;
+    line-height: 1;
+    margin-left: 450px;
+    width: 248.51px;
+    height: 56.22px;
+    background-color: #1161A0;
+    font-size: 15px;
+    padding: 0;
+    border-radius: 10px;
+    color: #fff;
+    text-align: center;
+    transition: background-color .3s, opacity .3s;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cta-button:hover,
+.cta-button:focus,
+.btn-savoir-plus:hover,
+.btn-savoir-plus:focus {
+    background-color: #1161A0;
+    opacity: 0.9;
+}
+
+.services {
+    padding: 40px 0;
+    width: 100%;
+}
+
+.services h2 {
+    text-align: center;
+    font-size: 60px;
+    margin: 50px 0 60px 0;
+}
+
+.services-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 0 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.service-box {
+    flex: 0 1 476px;
+    text-align: left;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.service-image-link {
+    display: block;
+    overflow: hidden;
+}
+
+.service-box img {
+    width: 100%;
+    height: 716px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.service-box img:hover {
+    transform: scale(0.95);
+    cursor: pointer;
+}
+
+.service-image-link:hover {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.service-box h3 {
+    margin: 30px 0 20px 0;
+    font-size: 24px;
+    font-family: "Lato", sans-serif;
+}
+
+.service-box p {
+    font-size: 16px;
+    line-height: 1.8;
+    font-family: "Lora", serif;
+}
+
+.btn-savoir-plus {
+    display: inline-block;
+    line-height: 1;
+    width: 248.51px;
+    height: 56.22px;
+    background-color: #1161A0;
+    font-size: 15px;
+    padding: 0;
+    border-radius: 10px;
+    color: #fff;
+    text-align: center;
+    transition: background-color .3s, opacity .3s;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bandeau-gris {
+    background-color: #f5f5f5;
+    width: 100%;
+    padding: 80px 40px;
+    margin: 80px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bandeau-content {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.rond-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.rond-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.bandeau-texte {
+    flex-grow: 0;
+    text-align: left;
+}
+
+.bandeau-texte h3 {
+    font-size: 20px;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.bandeau-texte cite {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+    color: #1161A0;
+}
+
+.bandeau-texte p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .services-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .service-box {
+        max-width: 476px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-content {
+        padding: 0 10px;
+    }
+
+    .cta-button {
+        min-width: 280px;
+        padding: 15px 20px;
+    }
+
+    .bandeau-gris {
+        padding: 40px 20px;
+    }
+
+    .bandeau-content {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .rond-image {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+.philosophie {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.philosophie h2 {
+    font-size: 60px;
+    margin-bottom: 30px;
+}
+
+.philosophie-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 30px;
+}
+
+.philosophie-box {
+    width: 476px;
+}
+
+.philosophie-box img {
+    width: 100%;
+    height: 300px ;
+    object-fit: cover;
+    display: block;
+}
+
+.philosophie p {
+    max-width: 800px;
+    margin: 30px auto 0;
+    line-height: 1.8;
+    text-align: left;
+    margin-left: 90px;
+}
+
+/* Media query pour la version mobile */
+@media (max-width: 768px) {
+    .philosophie-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .philosophie-box {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+/* Styles de base */
+.hidden {
+    display: none;
+}
+
+.visibility-hidden {
+    visibility: hidden;
+}
+
+/* Styles des conteneurs */
+.container {
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+}
+
+/* Styles des sections */
+.section {
+    position: relative;
+    min-height: 1px;
+    display: flex;
+}
+
+/* Styles des widgets et composants */
+.widget {
+    position: relative;
+}
+
+.widget:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+/* Styles des boutons */
+.cta-button, 
+.btn-savoir-plus {
+    display: inline-block;
+    line-height: 1;
+    width: 248.51px;
+    height: 56.22px;
+    background-color: #1161A0;
+    font-size: 15px;
+    padding: 0;
+    border-radius: 10px;
+    color: #fff;
+    text-align: center;
+    transition: background-color .3s, opacity .3s;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn-savoir-plus {
+    display: inline-block;
+    line-height: 1;
+    width: 248.51px;
+    height: 56.22px;
+    margin-left: 90px;
+    background-color: #1161A0;
+    font-size: 15px;
+    padding: 0;
+    border-radius: 10px;
+    color: #fff;
+    text-align: center;
+    transition: background-color .3s, opacity .3s;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* États au survol et au focus */
+.cta-button:hover,
+.cta-button:focus,
+.btn-savoir-plus:hover,
+.btn-savoir-plus:focus {
+    background-color: #1161A0;
+    opacity: 0.9;
+}
+
+/* Media queries pour le responsive */
+@media (max-width: 767px) {
+    .section {
+        width: 100%;
+    }
+    
+    .hidden-mobile {
+        display: none;
+    }
+    
+    .navbar {
+        flex-direction: column;
+    }
+    
+    .nav-links {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .services-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .philosophie-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+}
