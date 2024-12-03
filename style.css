@@ -449,3 +449,76 @@ body {
         align-items: center;
     }
 }
+.bandeau-bleu {
+    background-position: center;
+    background-size: cover;
+    background-image: url(./image/accueil_4.jpg);
+    background-color: #f5f5f5;
+    width: 100%;
+    padding: 80px 40px;
+    margin: 80px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.bandeau-bleu h3{
+    color: white;
+}
+.bandeau-bleu p{
+    color: white;
+}
+.bandeau-bleu img{
+    transform: translateY(-100px);
+}
+
+footer {
+    padding: 20px 0; /* Espacement vertical */
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.footer-right {
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    list-style: none;
+}
+
+.nav-links a {
+    color: #333;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: opacity 0.3s ease;
+}
+
+.nav-links a:hover {
+    opacity: 0.8;
+}
+
+.logo-link {
+    margin-top: -150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
